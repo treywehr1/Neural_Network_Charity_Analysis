@@ -14,10 +14,11 @@ Results of building the model were as follows:
 ### Compiling, Training, and Evaluating the Model
 - Originally, it was decided to add two hidden layers with 80 and 30 neurons. The activation functions selected were ReLu for the hidden layers, and Sigmoid for the output layer. ReLu and Sigmoid activation functions were selected for their commonality amongst Binary Classification models, while the number of hidden layers and neurons were selected as a starting point to a bit arbitrarily in order to begin with experimentation of the NN configuration.
 - After several optimization changes, the desired model performance of 75% accuracy was not accomplished.
-- The first optimization attempt added 3 more hidden layers and 50 more epochs(100 total). This resulted in an approximate .005% decline in accuracy.
-- The second optimization attempt returned to the starting level of hidden layers and epochs(50 total), but reduced the number of features by eliminating "STATUS" and "SPECIAL_CONSIDERATIONS" columns. Also the neurons per each hidden layer were increased. This resulted in an approximate .001% improvement in accuracy.
-- The third optimization attempt combined the first two. This led to the greated increase in accuracy achieved. An approximate .0016% boost from the original test.
-- The fourth optimization attemp kept all properties of the third, but the output layer activation function was changed from "sigmoid" to "tahn". This resulted in an accuracy scored approximately .0011% less accurate than attempt #3.
+- An initial accuracy score of .7252 was achieved.
+- The first optimization attempt added 3 more hidden layers and 50 more epochs(100 total). This resulted in an approximate .005% decline in accuracy (.7247).
+- The second optimization attempt returned to the starting level of hidden layers and epochs(50 total), but reduced the number of features by eliminating "STATUS" and "SPECIAL_CONSIDERATIONS" columns. Also the neurons per each hidden layer were increased. This resulted in an approximate .001% improvement in accuracy (.7262).
+- The third optimization attempt combined the first two. This led to the greated increase in accuracy achieved. An approximate .0016% boost from the original test (.7268).
+- The fourth optimization attemp kept all properties of the third, but the output layer activation function was changed from "sigmoid" to "tahn". This resulted in an accuracy scored approximately .0011% less accurate than attempt #3 (.7257).
 
 
 ## Summary: 
