@@ -20,6 +20,20 @@ Results of building the model were as follows:
 - The third optimization attempt combined the first two. This led to the greated increase in accuracy achieved. An approximate .0016% boost from the original test (.7268).
 - The fourth optimization attemp kept all properties of the third, but the output layer activation function was changed from "sigmoid" to "tahn". This resulted in an accuracy scored approximately .0011% less accurate than attempt #3 (.7257).
 
+#### Hidden Layers | Optimization Attempt #1
+![Imgur](https://imgur.com/dqsghTq.png) 
+
+#### Epochs | Optimization Attempt #1, #3, and #4
+![Imgur](https://imgur.com/bX10uP3.png)
+
+#### Feature Reduction | Attempt #2, #3, and #4
+![Imgur](https://imgur.com/hlmWh1s.png)
+
+#### Node Adjustment | Attempt #2, #3, and #4
+![Imgur](https://imgur.com/WcWZIpi.png)
+
+#### Activation Function | Attempt #4
+![Imgur](https://imgur.com/Qke4FBA.png)
 
 ## Summary: 
 Overall, the results of the deep learning model achieve an accuracy well above random chance. As the model is trained now, it can predict whether a charity application will be succesful up to 72.68% of the time. Much better than a 50/50 shot!
